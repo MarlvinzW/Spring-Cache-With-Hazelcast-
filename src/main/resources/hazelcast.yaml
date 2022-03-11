@@ -1,0 +1,11 @@
+hazelcast:
+  cluster-name: cache_example
+  map:
+    default:
+      time-to-live-seconds: 120
+      max-idle-seconds: 120
+      eviction:
+        eviction-policy: LRU
+  network:
+    rest-api:
+      enabled: true
